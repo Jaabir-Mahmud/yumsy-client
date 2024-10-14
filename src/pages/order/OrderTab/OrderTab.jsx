@@ -31,11 +31,12 @@ const OrderTab = ({ items }) => {
 
   return (
     <div>
-      <div className="grid md:grid-cols-3 gap-4">
-        {currentItems.map((item) => (
-          <FoodCard key={item.id} item={item} />
-        ))}
-      </div>
+     <div className="grid md:grid-cols-3 gap-4">
+  {currentItems.map((item, index) => (
+    <FoodCard key={item.id || item._id || index} item={item} />
+  ))}
+</div>
+
 
       {/* Pagination Controls */}
       <div className="flex justify-center items-center mt-4">

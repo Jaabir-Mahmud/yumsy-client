@@ -21,7 +21,7 @@ import Secret from "../pages/Shared/secret/Secret";
           element:<Home></Home>
         },
         {
-          path: 'menu',
+          path: 'our/menu',
           element: <Menu></Menu>
         },
         {
